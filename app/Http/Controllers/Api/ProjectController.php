@@ -19,4 +19,12 @@ class ProjectController extends Controller
             'response' => $projects, 
         ]);
     }
+    
+    public function show(Project $project)
+    {
+        return response()->json([
+            'success' => true,
+            'response' => $project, 
+        ]);
+    }
 }
