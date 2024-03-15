@@ -11,6 +11,7 @@ use App\Models\Type;
 
 // Helpers
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Storage;
 
 class ProjectSeeder extends Seeder
 {
@@ -22,6 +23,10 @@ class ProjectSeeder extends Seeder
         Schema::withoutForeignKeyConstraints(function () {
             Project::truncate();
         });
+
+        // Svuotare cartella img
+        Storage::disk('public')->deleteDirectory('img');
+        Storage::disk('public')->makeDirectory('img');
 
         for ($i=0; $i < 20; $i++) { 
             $project = Project::create([
