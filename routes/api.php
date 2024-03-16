@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 // Controllers
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resource('projects', ProjectController::class)->only(['index', 'show']);
+
+// Aggiungere rotta api per ricevere i dati dal frontend da una chiamata
+// ricordati che c'è comunque /api
+Route::post('/contacts', [ContactController::class, 'store'])->name('contacts.store');
