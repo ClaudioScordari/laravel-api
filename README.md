@@ -1,3 +1,9 @@
+**Descrizione del Progetto - Gestione Risposte JSON con Laravel**
+
+Progetto che coinvolge l'utilizzo di Laravel nel backend per gestire richieste API dal frontend e restituire dati sotto forma di JSON. L'obiettivo principale: stampare una serie di nomi di progetti sulla pagina attraverso risposte JSON. Questo lavoro è stato ideale per le competenze su Laravel e per la gestione delle risposte JSON, migliorando la capacità di sviluppo backend e l'integrazione con il frontend.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Passi da fare per poter utilizzare il template di Laravel
 
 0. Creo la repository a partire dal template e mi clono la repository appena creata
